@@ -8,3 +8,14 @@ describe "conversions" do
     end
   end
 end
+
+
+describe "conversions" do
+  describe '#pounds_to_kilograms' do
+    it 'given zero, returns 0.0' do
+      kilograms = pounds_to_kilograms(0)
+      expect(pounds).to eq(0.0)
+    end
+  end
+end
+
