@@ -1,17 +1,16 @@
-require_relative './conversions.rb'
+ruby require_relative './conversions.rb'
 
-puts "Given 0, it should return 0.0"
+puts "ounces_to_grams when given 0, returns 0.0"
 answer = ounces_to_grams(0)
 if answer == 0.0
-  puts "Passed!"
+  puts "Passed the test!"
 else
-  puts "Test failed: got #{answer} instead"
-end
+  puts "Failed the test: got #{answer} instead"
 
-puts "Given 1, it should return 28.3495"
-answer = ounces_to_grams(1)
-if answer == 28.3495
-  puts "Passed!"
-else
-  puts "Test failed: got #{answer} instead"
+  puts "ounces_to_grams when given 1, returns 28.3495"
+  answer = ounces_to_grams(1)
+  if answer == 28.3495
+    puts "Passed the test!"
+  else
+    puts "Failed the test: got #{answer} instead"
 end
