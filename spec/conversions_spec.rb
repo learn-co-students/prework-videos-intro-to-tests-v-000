@@ -7,4 +7,11 @@ describe "conversions" do
       expect(grams).to eq(0.0)
     end
   end
+  
+  describe '#author' do
+    it 'given an author, it returns the author name with an attribution' do
+      a = author("William")
+      expect(a).to eq("William is a great programmer!")
+    end
+  end
 end
