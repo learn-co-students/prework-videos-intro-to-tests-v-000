@@ -5,6 +5,7 @@ describe "conversions" do
     it 'given zero, returns 0.0' do
       grams = ounces_to_grams(0)
       expect(grams).to eq(0.0)
+      #check this is already present
     end
   end
 end
