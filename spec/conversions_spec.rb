@@ -6,5 +6,9 @@ describe "conversions" do
       grams = ounces_to_grams(0)
       expect(grams).to eq(0.0)
     end
+    it 'converts ounces to grams correctly' do
+    grams = ounces_to_grams(3)
+    expect(grams).to eq(85.0485)
+    end
   end
 end
